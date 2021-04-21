@@ -17,30 +17,26 @@ public class Base {
         int operation = scanner.nextInt();
         switch (operation) {
             // операция сложение
-            case 1:
+            case 1 -> {
                 result = num1 + num2;
                 System.out.printf("Сумма равна: %.4f", result);
-                break;
+            }
             // операция вычитание
-            case 2:
+            case 2 -> {
                 result = num1 - num2;
                 System.out.printf("Разница равна: %.4f", result);
-                break;
+            }
             // операция умножение
-            case 3:
+            case 3 -> {
                 result = num1 * num2;
                 System.out.printf("Произведение равно: %.4f", result);
-                break;
+            }
             // операция деление
-            case 4:
+            case 4 -> {
                 result = num1 / num2;
                 System.out.printf("Частное равно: %.4f", result);
-                break;
-            default:
-                System.err.println("Значение операции введено неверно");
-                break;
-
-
+            }
+            default -> System.err.println("Значение операции введено неверно");
         }
     }
 }
